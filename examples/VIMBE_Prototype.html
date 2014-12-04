@@ -301,7 +301,7 @@
 					}, 500);
 					
 				}
-                /*
+                
                 //this is supposed to make the menu scale, but instead it breaks everything :)
                 touchmove: function() {
                     for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
@@ -309,11 +309,11 @@
                         // Detect if touch is on scale icon
                         if ( touch.x > (480 * scale) && touch.x < (500 * scale) && touch.y < (500 * scale) && touch.y > (480 * scale) ) {
                           // Adjust Scale
-                          scale = scale * (1 + ( sqrt( touch.dx * touch.dx + touch.dy * touch.dy ) / 500 ) );
+                          scale = scale * (1 + ( sqrt( touch.ox * touch.ox + touch.oy * touch.oy ) / 500 ) );
                         }
                     }
                 }
-                */
+                
 			});
 		};
 
